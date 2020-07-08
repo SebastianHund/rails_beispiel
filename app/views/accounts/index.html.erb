@@ -4,6 +4,10 @@
 
 <ul>
 <% @accounts.each do |account| %>
-  <li><%= account.name %></li>
+  <li>
+    <a href="<%= edit_account_path(account) %>">
+      <%= account.name %>
+    </a>
+  </li>
 <% end %>
 </ul>
